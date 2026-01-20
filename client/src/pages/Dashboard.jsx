@@ -14,6 +14,9 @@ import SupplierDiscovery from '../components/SupplierDiscovery';
 import NetworkView from '../components/NetworkView';
 import GrowthHub from '../components/GrowthHub';
 import LedgerView from '../components/LedgerView';
+import DemandForecastingView from '../components/DemandForecastingView';
+import CustomerHeatmapView from '../components/CustomerHeatmapView';
+import VoiceAssistantView from '../components/VoiceAssistantView';
 import '../features.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement, PointElement, LineElement);
@@ -117,6 +120,9 @@ const Dashboard = () => {
             case 'network': return <NetworkView />;
             case 'growth': return <GrowthHub />;
             case 'ledger': return <LedgerView />;
+            case 'forecasting': return <DemandForecastingView />;
+            case 'heatmap': return <CustomerHeatmapView />;
+            case 'voice': return <VoiceAssistantView />;
             case 'profile': return <ProfileView />;
             default:
                 return (
@@ -215,6 +221,9 @@ const Dashboard = () => {
                         { id: 'marketing', label: 'AI Marketing', icon: Megaphone },
                         { id: 'ledger', label: 'Digital Ledger', icon: Book },
                         { id: 'schemes', label: 'Schemes', icon: Lightbulb },
+                        { id: 'forecasting', label: 'AI Demand Forecasting', icon: Activity, color: '#10b981' },
+                        { id: 'heatmap', label: '🔥 Customer Heatmaps', icon: TrendingUp, color: '#f59e0b' },
+                        { id: 'voice', label: '🎤 Voice Assistant', icon: Bot, color: '#ec4899' },
                         { id: 'growth', label: 'Growth Intelligence', icon: Lightbulb, color: '#10b981' },
                         { id: 'network', label: 'Network Simulation', icon: Share2 },
                         { id: 'policy', label: 'AI Policy Expert', icon: Bot, color: '#6366f1' },

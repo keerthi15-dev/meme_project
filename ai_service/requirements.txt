@@ -15,3 +15,8 @@ faiss-cpu
 pypdf
 tiktoken
 python-dotenv
+openai-whisper
+torch
+torchaudio
+soundfile
+pydub

@@ -1,0 +1,8 @@
+{
+  "training_date": "2026-01-18T22:22:16.632634",
+  "device": "mps",
+  "n_parameters": 2211815,
+  "best_val_loss": 0.07458046823740005,
+  "final_val_mape": 1335832.0309386784,
+  "n_epochs_trained": 13
+}
